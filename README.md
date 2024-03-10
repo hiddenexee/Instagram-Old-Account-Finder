@@ -22,7 +22,7 @@ You can star the project to support me. Thank you
 # Features:
 
 - Full Mobil Api
-- Quick scan (full requests)
+- Quick scan (full requests, multi thread)
 - 100% accurate results
 - No third party apis
 - Need a proxy
