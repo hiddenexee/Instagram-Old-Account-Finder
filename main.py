@@ -37,16 +37,16 @@ def check_user(user: str) -> None:
             print("[-] IP blocked")
             file_name = "ip_blocked"
         elif 'USER_NOT_FOUND' in response:
-            print("[-] Kullanıcı bulunamadı =>", user)
+            print("[-] User not found =>", user)
             file_name = "not_user"
         elif 'e-posta gönderdik' in response:
-            print("[+] Mail gönderildi =>", user)
+            print("[+] Email sent =>", user)
             file_name = "send_email"
         elif 'auth_method_password_back_button_clicked_client' in response:
-            print(f"[-] Hesap mevcut, mail gönderilmedi =>", user)
+            print(f"[-] Account exists, email not sent =>", user)
             file_name = "not_send_email"
         else:
-            print("[-] Bilinmedik bir sorun oluştu")
+            print("[-] An unknown problem occurred")
             file_name = "none"
     except:
         print("[-] Network error")
